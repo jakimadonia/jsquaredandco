@@ -1,0 +1,41 @@
+.site {  
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-template-areas: "header header header"
+                       "title title title"
+                       "main main main"
+                       "footer footer footer";
+  margin: 0;
+  padding: 0;
+}
+.mastheader {
+   grid-area: header;
+}
+
+.navbar {
+   background-color: teal;
+}
+
+.page-title {
+   grid-area: title;
+   background-color: teal;
+   margin: 0;
+   text-align: center;
+   font-family: Arizonia;
+   height: 100px;
+}
+
+.navbar nav a {
+   color: black;
+}
+
+.main-content {
+   grid-area: main;
+   background-color: greenyellow;
+}
+
+.footer {
+   grid-area: footer; 
+   background-color: purple;
+}
+   
